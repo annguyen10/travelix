@@ -1,0 +1,411 @@
+.nav__overlay{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    display: none;
+    background-color: rgba(0,0,0,0.3);
+    animation: FadeIn linear 0.5s;
+}
+.nav__mobile{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 300px;
+    max-width: 100%;
+    background-color: rgb(85, 85, 85);
+    transform: translateX(100%);
+    opacity: 0;
+    transition: all linear 0.5s ;
+}
+.nav__mobile-icon {
+    display: block;
+    float: right;
+}
+.nav__mobile-list{
+    padding: 40px;
+    height: 100%;
+    text-align: start;
+}
+.nav__list {
+    margin-top: 30px;
+    display: block;
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+    list-style: none;
+}
+.nav__list-home{
+    margin-top: 0px;
+}
+.nav__link,
+.nav__link-second {
+    letter-spacing: 2px;
+    text-decoration: none;
+    line-height: 35px;
+    color: #fff;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-left: 17px;
+}
+.subnav__link{
+    list-style: none;
+    margin-left: 25px;
+}
+.fas {
+    font-weight: 900;
+    font-size: 28px;
+    padding: 25px;
+    color: #fff;
+}
+@keyframes FadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+/* tablet $ mobile */
+@media (max-width:63.9375em){
+    .nav__input:checked ~ .nav__mobile{
+        transform: translateX(0%);
+        opacity: 1;
+        overflow: scroll;
+    }
+    .nav__input:checked ~ .nav__overlay{
+        font-size: 20px;
+        display: block;
+    }
+    .header {
+        height: 124px;
+        background: #555555;
+    }
+    .nav--travel {
+        display: none;
+    }
+    .nav {
+        padding: 20px 15px 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column;
+    }
+    .nav__travel--img img {
+        width: 160px;
+        margin: 0px;
+    }
+    .nav__book{
+        line-height: 0px;
+        margin-top: 10px;
+    }
+    .container{
+        position: relative;
+        margin-top: 0px;
+        height: 1274px;
+    }
+    .container--img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+    .container--img img {
+        height: 100%;
+    }
+
+    .container-search {
+    position: absolute;
+    text-align: center;
+    z-index: 1;
+    padding: 270px 10px 200px;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    }
+    .container--check .check--choose {
+       width: 95%;
+    }
+    .container--selection {
+        margin-top: 65px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column;
+    }
+    .selection-list {
+        width: 90%;
+    }
+    .fun-label{
+        text-align: center;
+    }
+    .place-selection {
+        margin-top: 18px;
+        display: flex;
+        justify-content: center;
+        flex-flow: column;
+    }
+    .place-selection-first {
+       margin: 15px;
+    }
+    .third--view {
+        height: 100%;
+        width: 100%;
+        padding: 270px;
+    }
+    .first--europe-footer {
+        margin: auto;
+    }
+    
+    .introduce--add, .introduce--add--final {
+        display: none;
+    }
+    .introduce {
+        height: 320px;
+    }
+    .introduce .introduce--note {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        display: flex;
+        flex-flow: column;
+        padding: 50px 10px;
+    }
+    .introduce .introduce--note {
+    }
+    .note--second {
+    }
+    .note--second-label {
+        display: block;
+        width: 285px;
+        margin: 35px 224px;
+    }
+    .book{
+        height: 1500px;
+    }
+    .book-review {
+        width: 100%;
+        margin: 0px;
+        padding: 20px 35px 20px 20px;
+    }
+    .review--intro {
+        display: flex;
+        justify-content: space-between;
+        flex-flow: column;
+    }
+    .review--intro-right {
+        flex: 2;
+        margin-left: 0px;
+        margin-top: 20px;
+        padding: 20px;
+    }
+    .right-detail-time {
+        margin: 0px;
+        width: 100%;
+    }
+    .hour h6::after{
+        right: -70px;
+    }
+    .book-discovery {
+        /* margin-top: 65px; */
+        display: flex;
+        justify-content: space-around;
+        height: 100%;
+        flex-flow: column;
+        margin-top: 470px;
+    }
+    .about {
+        margin-top: 30px;
+        width: 100%;
+        /* height: 268px; */
+        display: flex;
+        /* justify-content: space-between; */
+        flex-flow: column;
+        height: 100%;
+    }
+    .about .about-one {
+        width: 100%;
+        flex: 0px;
+    }
+    .promotion-place-selection {
+        flex-flow: column;
+        margin: 40px 0px 0px 0px;
+    }
+    .promation-place-selection-first {
+        /* padding: 0 15px; */
+        padding: 15px 30px;
+    }
+    .promotion-place-relative .promotion-img-img {
+        width: 100%;
+        height: 100%;
+    }
+    .footer {
+        height: 1435px;
+    }
+    .footer--all{
+        margin: 0px;
+        width: 100%;
+        padding: 0 30px;
+    }
+    .footer-all-an {
+        padding: 0px;
+        margin-top: 80px;
+    }
+    .footer--all-one {
+        margin: 0px;
+        flex-flow: column;
+    }
+    .footer-two-keep {
+        margin-top: 60px;
+    }
+    .input .email {
+        padding: 14px 200px;
+    }
+    .checkin {
+        margin-left: 0;
+        margin-right: 0px;
+    }
+    .checkin-cover {
+        flex-flow: column;
+    }
+    .checkin-color {
+        background-color: #14b9d5;
+        /* height: 56px; */
+        width: 100%;
+        /* display: block; */
+        /* display: flex; */
+        /* justify-items: center; */
+        display: flex;
+        flex-flow: column;
+        height: 100%;
+        align-items: center;
+    }
+    .checkin-left, .checkin-right {
+        /* width: 50%; */
+        height: 56px;
+        padding: 20px 20px;
+        width: auto;
+    }
+}
+/* Tablet */
+@media (min-width:46.25em) and (max-width:63.9375em){
+    .place-selection {
+        align-items: center;
+    }
+    .place-selection-first img {
+        width: 718px;
+        height: 718px;
+    }
+    .first--europe-second img {
+        width: 35px;
+        height: 42px;
+    }
+}
+/* Mobile */
+@media (max-width: 46.1875em){
+    .nav {
+        padding: 0 42px;
+    }
+    .container{
+        height: 1396px;
+    }
+    .container-search {
+        padding: 270px 57px 200px 57px;
+    }
+    .container--img{
+        overflow: hidden;
+    }
+    .container--img img {
+        width: auto;
+    }
+    .container--place{
+        margin-right: 57px;
+        margin-left: 57px;
+    }
+    .place-selection {
+        margin-top: 50px;
+    }
+    .view-second{
+        margin-top: 0px;
+    }
+    .place-selection-first {
+        margin: 0;
+        margin-bottom: 15px;
+
+    }
+    .place-selection-first img {
+        width: 296px;
+        height: 296px;
+    }
+    .first--europe-second img {
+        width: 35px;
+        height: 42px;
+    }
+    .fun-label {
+        text-align: start;
+    }
+    .third--view {
+        padding: 0;
+    }
+    .introduce {
+        height: 370px;
+    }
+    .introduce .introduce--note {
+        padding: 50px 57px;
+    }
+    .note--second-label {
+        margin: 35px -3px;
+    }
+    .book{
+        height: 1800px;
+    }
+    .book-review {
+        padding: 20px 57px 20px 57px;
+    }
+    .right-detail-img img {
+        height: 141px;
+        width: 260px;
+    }
+    .place--list-structure {
+        width: 100%;
+    }
+    .place--list-money {
+        margin-top: 179px;
+    }
+    .right-detail-time .book-list {
+        flex-flow: column;
+    }
+    .right-detail-time {
+        bottom: auto;
+        height: auto;
+        margin-top: -5px;
+    }
+    .hour h6::after {
+        right: -50px;
+    }
+    .book-discovery {
+        margin-top: 766px;
+    }
+    .promation-place-selection-first {
+        padding: 15px 58px;
+    }
+    .footer--all {
+        padding: 0 58px;
+    }
+    .footer-all-an {
+        flex-flow: column;
+    }
+    .input .email {
+        padding: 14px 70px;
+    }
+    .input-second .submit-send {
+        padding: 14px 130px;
+        float: left;
+    }
+    .checkin--one {
+        width: 100%;
+    }
+}
